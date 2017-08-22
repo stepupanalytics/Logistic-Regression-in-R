@@ -25,7 +25,6 @@ is.factor(titanic$Embarked)
 #removing missing value by Knn Approach
 library(DMwR)
 ?knnImputation
-titanic <- knnImputation(titanic[,!names(titanic) %in% "Survived"])
 titanic <- knnImputation(titanic)
 
 
